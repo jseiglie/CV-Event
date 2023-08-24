@@ -1,0 +1,258 @@
+/* principio reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* final reset CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+:root {
+    font-size: 16px;
+    /* accesibilidad -> fuente siempre tiene que ser divisible por 8 */
+    --color-primary: #0e193f;
+    --color-secondary: #ed740a;
+    --color-terciary: #f7ceab;
+    font-family: "Roboto Mono", monospace;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 1rem;
+}
+
+.header-picture_name{
+   display: flex; 
+   align-items: center;
+}
+
+.profile--picture {
+    max-width: 150px;
+    border-radius: 50%;
+    filter: grayscale();
+}
+
+h1 {
+    font-size: 2rem;
+    /* medida en dependencia del font size en el root*/
+    margin-left: 2rem;
+    color: var(--color-secondary)
+}
+
+.about {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-terciary);
+}
+
+.main--holder {
+    display: flex;
+}
+
+.left,
+.right {
+    padding: 1rem;
+    width: 45%;
+}
+
+.exp--title {
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.exp-laboral-holder {
+    padding: 1rem;
+}
+
+.exp-laboral-nombre {
+    font-size: 1.3rem;
+}
+
+.exp-laboral-rol {
+    font-size: 1.2rem;
+}
+
+.exp-laboral-separador {
+    width: 50%;
+    padding: 0;
+}
+
+.exp-laboral-fecha {
+    font-style: italic;
+}
+
+.exp-laboral-descripcion {
+    margin: 1rem 0;
+}
+
+.exp-laboral-list {
+    margin: 0 1rem;
+}
+
+
+.skills--description {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer--list>li {
+    margin-top: 0.5rem;
+}
+.footer--list--item:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
